@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 5 - Course Winter 2022</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="big-container">
+            <header class="header">
+                    <nav class="menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a class="menu-link" target="_blank" href="figma.html">
+                                    Перейти на страницу с макетом из фигмы
+                                </a>
+                            </li>
+                            <li class="menu-item task1">Lesson_5  /  Конспект 5-го урока</li>
+                        </ul>
+                    </nav>
+            </header>
+            <main class="main">                
+                <h1 class="title">Тема урока:<br> "ОТСТУПЫ. ШИРИНЫ И ВЫСОТЫ. БЛОЧНО-СТРОЧНАЯ СТРУКТУРА"</h1>
+                <div class="theme">
+                    <h2 class="theme-title">ОТСТУПЫ</h2>
+                    <div class="example">
+                        <h3 class="theme-subtitle">Внутренние отступы</h3>
+                    <p class="description">    
+                        1.Расстояние от границ объекта до ЕГО содержимого 
+                        только для блочных объектов
+                    </p>
+                    <p class="description"> 
+                        2.Значения задаются положительным числом 
+                        и единицей измерения (px, %, em, rem)
+                    </p>
+                        <div class="block-1">
+                            <p>
+                                <mark>Блочный тег DIV и т.п.</mark> 
+                                .block {
+                                    /* Верхний */
+                                    /* padding-top: 20px; */
+                                    /* Правый */
+                                    /* padding-right: 30px; */
+                                    /* Нижний */
+                                    /* padding-bottom: 50px; */
+                                    /* Левый */
+                                    /* padding-left: 80px; */
+                                
+                                    /* Универсальный параметр */
+                                    /* Анатомия */
+                                    /* padding: сверху справа снизу слева; */
+                                    /* Стрелка часов 12 3 6 9 */
+                                    /* padding: 20px 30px 50px 80px; */
+                                
+                                    /*
+                                    padding: 0 0 50px 0;
+                                    или
+                                    padding-bottom: 50px;
+                                    */
+                                
+                                    /* Одинаковые значения сверху/снизу слева/справа */
+                                    /* сверху/снизу 20px слева/справа 50px */
+                                    /* padding: 20px 50px; */
+                                
+                                    /* Одинаковые значения слева/справа */
+                                    /* сверху/снизу 20px слева/справа 50px */
+                                
+                                    /* сверху 20px снизу 40px слева/справа 50px */
+                                    /* padding: 20px 50px 40px; */
+                                
+                                    /* Все значения равны */
+                                    /* сверху/снизу слева/справа 50px */
+                                    /* padding: 50px; */
+                                
+                                    /* Указание % */
+                                    /* Процент от ширины родителя */
+                                    /* padding: 10% 40% 10% 5%; */
+                                }
+                            </p>    
+                        </div>
+                        <h3 class="theme-subtitle"> Внешний отступ</h3>
+                    <p class="description">    
+                        1. Расстояние от границ объекта до других объектов(а) 
+                        только для блочных объектов
+                    </p>
+                    <p class="description"> 
+                        2. Значения задаются положительным числом 
+                        и единицей измерения (px, %, em, rem)
+                    </p>
+                    <p class="description">
+                        3. Значения могут быть отрицательными
+                    </p>
+                        <div class="small-container">
+                            <div class="block-2">
+                                <p>
+                                    <mark>Блочный тег DIV и т.п.</mark>
+                                    .block {
+                                        /* Верхний */
+                                        /* margin-top: 50px; */
+                                        /* margin-top: -50px; */
+                                        /* Правый */
+                                        /* margin-right: 50px; */
+                                        /* Нижний */
+                                        /* margin-bottom: 50px; */
+                                        /* Левый */
+                                        /* margin-left: 50px; */
+                                    
+                                        /* Универсальный параметр */
+                                        /* Анатомия */
+                                        /* margin: сверху справа снизу слева; */
+                                        /* Стрелка часов 12 3 6 9 */
+                                        /* margin: 20px 30px 50px 80px; */
+                                    
+                                        /*
+                                        margin: 0 0 50px 0;
+                                        или
+                                        margin-bottom: 50px;
+                                        */
+                                    
+                                        /* Одинаковые значения сверху/снизу слева/справа */
+                                        /* сверху/снизу 20px слева/справа 50px */
+                                        /* margin: 20px 50px; */
+                                    
+                                        /* Одинаковые значения слева/справа */
+                                        /* сверху/снизу 20px слева/справа 50px */
+                                    
+                                        /* сверху 20px снизу 40px слева/справа 50px */
+                                        /* margin: 20px 50px 40px; */
+                                    
+                                        /* Все значения равны */
+                                        /* сверху/снизу слева/справа 50px */
+                                        /* margin: 50px; */
+                                    
+                                        /* Указание % */
+                                        /* Процент от ширины родителя */
+                                        /* margin: 10% 40% 10% 5%; */
+                                    
+                                        /* margin: 0px 0px 20px 0px; */
+                                    }
+                                </p>
+                            </div>
+                            <div class="block-3">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus exercitationem sed amet distinctio ipsa laudantium. Aspernatur esse nobis optio tempore dolor modi alias dicta aperiam repudiandae, quisquam quos similique?
+                                <p class="block-text text-1">
+                                    /* Верхний */
+                                    /* margin-top: 10px; */
+                                    /* Правый */
+                                    /* margin-right: 30px; */
+                                    /* Нижний */
+                                    /* margin-bottom: 15px; */
+                                    /* Левый */
+                                    /* margin-left: 100px; */
+                                </p>
+                                <p class="block-text text-2">
+                                    /* Внешний отступ - для прижатия*/
+                                    margin-right: auto;
+                                </p>
+                                <p class="block-text text-3"> 
+                                    /* Все значения равны */
+                                    /* сверху/снизу слева/справа 50px */
+                                    /* margin: 50px; */
+                                </p>
+                            </div>
+                            <div class="block-4">
+                                <p class="block-text text-4"> 
+                                    /* Одинаковые значения сверху/снизу слева/справа */
+                                    /* сверху/снизу 20px слева/справа 50px */
+                                    /* margin: 20px 30px; */
+                                </p>
+                            </div>
+                            <div class="block-5">
+                                <p class="block-text text-5"> 
+                                    /* Универсальный параметр */
+                                    /* Анатомия */
+                                    /* margin: сверху справа снизу слева; */
+                                    /* Стрелка часов 12 3 6 9 */
+                                    /* margin: 20px 200px 40px 50px; */
+                                </p>
+                            </div>
+                            <div class="block-6">
+                                <p class="block-text text-6"> 
+                                    /* сверху 10px снизу 15px слева/справа 65px */
+	                                /* margin: 10px 65px 15px; */
+                                </p>
+                                <span class="mixt">
+                                    Lorem ipsum 
+                                </span>
+                                <span class="inline">
+                                    <mark>Я строчный.</mark> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum cum ipsa culpa, perspiciatis error quis eveniet quidem assumenda libero beatae ratione, accusantium laudantium laborum deserunt natus? Impedit, corrupti! Officia, deleniti.
+                                </span>
+                            </div>
+                            <div class="block-7">
+                                <p class="block-text text-7"> 
+                                    /* Процент от ширины родителя */
+	                                /* margin: 10% 40% 10% 5%; */ 
+                                </p>
+                            </div>
+                            <div class="block-8">
+                                <p class="block-text text-8"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reiciendis, atque ea est voluptatibus, inventore a nisi dolores quibusdam voluptates qui deleniti repellat, fugiat nulla architecto perspiciatis vero provident hic?
+                                </p>
+                                <p class="block-text text-9"> 
+                                    /* Отрицательный внешний отступ */
+	                                /* margin: -20px -10px 0px -10px; */ 
+                                </p>
+                                <p class="block-text text-10"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore reiciendis, atque ea est voluptatibus, inventore a nisi dolores quibusdam voluptates qui deleniti repellat, fugiat nulla architecto perspiciatis vero provident hic?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="image">
+                                <img width="100" src="img/logo.png" alt="">
+                            </div>
+                    </div>
+                </div>
+                <div class="theme">
+                    <h2 class="theme-title">УПРАВЛЕНИЕ ПЕРЕИЗБЫТКОМ КОНТЕНТА </h2>
+                    <div class="example">
+                        <h3 class="theme-subtitle">Overflow - Только блочные!!!</h3>
+                        <ul>
+                            <li>                                
+                                <mark>visible</mark> - Отображается все содержание элемента, даже за пределами установленной высоты и ширины. 
+                            </li>
+                            <li>                                
+                                <mark>hidden</mark> - Отображается только область внутри элемента, 
+                            </li>
+                            <li>                                
+                                <mark>scroll</mark>
+                                 - Всегда добавляются полосы прокрутки.
+                            </li>
+                            <li>                                
+                                <mark>auto</mark>
+                                 - Полосы прокрутки добавляются только при необходимости.
+                            </li>
+                        </ul>
+                        <div class="small-container">
+                            <div class=" block block-visible">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem voluptatem minus eveniet debitis et.
+                            </div>
+                            <div class="block block-hidden"> 
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquid delectus blanditiis magni natus libero saepe laudantium aut nobis error rerum perspiciatis eum, dolorem incidunt doloribus voluptate iusto unde vitae!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquid delectus blanditiis magni natus libero saepe laudantium aut nobis error rerum perspiciatis eum, dolorem incidunt doloribus voluptate iusto unde vitae!
+                            </div>
+                            <div class="block block-scroll">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquid delectus blanditiis magni natus libero saepe laudantium aut nobis error rerum perspiciatis eum, dolorem incidunt doloribus voluptate iusto unde vitae!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquid delectus blanditiis magni natus libero saepe laudantium aut nobis error rerum perspiciatis eum, dolorem incidunt doloribus voluptate iusto unde vitae!
+                            </div>
+                            <div class="block block-auto">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum aliquid delectus blanditiis magni natus libero saepe laudantium aut nobis error rerum perspiciatis eum, dolorem incidunt doloribus voluptate iusto unde vitae!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="theme">
+                    <h2 class="theme-title">УПРАВЛЕНИЕ ТИПОМ ОБЪЕКТА</h2>
+                    <div class="example">
+                        <h3 class="theme-subtitle">Свойство display.</h3>
+                        <p class="description">
+                            Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+                            Свойство не наследуется.
+                        </p>
+                        <ul>
+                            <li>                                
+                                <mark>block</mark> 
+                                - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого.
+                            </li>
+                            <li>
+                                <mark>inline</mark> - Элемент отображается как встроенный. Использование блочных тегов, таких как div и p, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. 
+                            </li>
+                            <li>
+                                <mark>inline-block</mark> - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега img). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный.
+                            </li>
+                            <li>                                
+                                <mark>none</mark>- Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+                            </li>
+                        </ul>
+                        <div class="small-container">
+                            <div class=" block">
+                                <span class="block-block">
+                                    Здесь был строчнй элемент! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem voluptatem minus eveniet debitis et.
+                                </span>
+                            </div>
+                            <div class="block">
+                                <p class="block-inline-2">
+                                    Блочный элемент отображается как встроенный. 
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                                <p class="block-inline-1">
+                                    Блочный элемент отображается как встроенный. 
+                                     
+                                </p>
+                                
+                            </div>
+                            <div class="block">
+                                <a class="more" href="">
+                                    Ссылка куда-то. Применение свойства дисплей <mark>inline-block</mark> 
+                                </a>
+                            </div>
+                            <div class="block">
+                                <div class="block-none">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, assumenda blanditiis. Tempora accusantium asperiores illo pariatur non hic at, sit totam necessitatibus, animi excepturi? Voluptatibus tempore aliquid ullam nemo consequuntur.
+                                </div>
+                                Временно удалён элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">Подвал</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
